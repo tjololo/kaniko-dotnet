@@ -1,5 +1,5 @@
 FROM ghcr.io/tjololo/webapp-base-dotnet-base:v0.0.1-preview.4 AS build
-COPY . .
+COPY . /customize
 RUN /scripts/build-app.sh
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0.5-alpine3.15 AS final
