@@ -10,4 +10,10 @@
     <ItemGroup>
         <PackageReference Include="Tjololo.DI.Interfaces" Version="0.0.1-preview.1" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\Dockerfile">
+        <Link>Dockerfile</Link>
+      </Content>
+    </ItemGroup>
 </Project>
