@@ -7,6 +7,6 @@ public class MyCalculator : PercentageCalculator
 {
     public double AddPercentage(double number)
     {
-       return number * 1.25;
+       return number * 1.30;
     }
 }
