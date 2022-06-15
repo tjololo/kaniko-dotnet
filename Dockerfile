@@ -7,4 +7,4 @@ WORKDIR /app
 COPY --from=build /app/publish .
 RUN addgroup -g 3000 dotnet && adduser -u 1000 -G dotnet -D -s /bin/false dotnet
 USER dotnet
-ENTRYPOINT ["dotnet", "Tjololo.DI.Template.dll"]
+ENTRYPOINT ["dotnet", "Tjololo.DI.Template.dll", "--urls=http://*:8080"]
