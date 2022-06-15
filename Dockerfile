@@ -1,4 +1,4 @@
-FROM ghcr.io/tjololo/webapp-base-dotnet-base:v0.0.1-preview.4 AS build
+FROM ghcr.io/tjololo/webapp-base-dotnet-base:v0.0.1-preview.6 AS build
 COPY . /customize
 RUN /scripts/build-app.sh
 
